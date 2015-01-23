@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5531413BDC4EE168F3F58CD9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB1BB1E141E8B116865911C /* libPods.a */; };
+		B52A65751A70D553005DDAA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A65741A70D553005DDAA0 /* main.m */; };
+		B52A65781A70D553005DDAA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A65771A70D553005DDAA0 /* AppDelegate.m */; };
+		B52A657B1A70D553005DDAA0 /* Squid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B52A65791A70D553005DDAA0 /* Squid.xcdatamodeld */; };
+		B52A657D1A70D553005DDAA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52A657C1A70D553005DDAA0 /* Images.xcassets */; };
+		B52A65801A70D553005DDAA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52A657E1A70D553005DDAA0 /* LaunchScreen.xib */; };
+		B52A658C1A70D553005DDAA0 /* SquidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A658B1A70D553005DDAA0 /* SquidTests.m */; };
+		B52A65971A70D9DF005DDAA0 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A65961A70D9DF005DDAA0 /* TextViewController.m */; };
+		B56201B31A72547100E90962 /* DDFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B56201B21A72547100E90962 /* DDFileReader.m */; };
+		B56201B71A7254A900E90962 /* UILabel+FormattedText.m in Sources */ = {isa = PBXBuildFile; fileRef = B56201B61A7254A900E90962 /* UILabel+FormattedText.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B52A65861A70D553005DDAA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B52A65671A70D553005DDAA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B52A656E1A70D553005DDAA0;
+			remoteInfo = Squid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CB1BB1E141E8B116865911C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FCADDB92AFB849CF183A89 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B52A656F1A70D553005DDAA0 /* Squid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52A65731A70D553005DDAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52A65741A70D553005DDAA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B52A65761A70D553005DDAA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B52A65771A70D553005DDAA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B52A657A1A70D553005DDAA0 /* Squid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Squid.xcdatamodel; sourceTree = "<group>"; };
+		B52A657C1A70D553005DDAA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B52A657F1A70D553005DDAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B52A65851A70D553005DDAA0 /* SquidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52A658A1A70D553005DDAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52A658B1A70D553005DDAA0 /* SquidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquidTests.m; sourceTree = "<group>"; };
+		B52A65951A70D9DF005DDAA0 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		B52A65961A70D9DF005DDAA0 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		B56201B11A72547100E90962 /* DDFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileReader.h; sourceTree = "<group>"; };
+		B56201B21A72547100E90962 /* DDFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileReader.m; sourceTree = "<group>"; };
+		B56201B51A7254A900E90962 /* UILabel+FormattedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FormattedText.h"; sourceTree = "<group>"; };
+		B56201B61A7254A900E90962 /* UILabel+FormattedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FormattedText.m"; sourceTree = "<group>"; };
+		F97312B71E8852D486663422 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B52A656C1A70D553005DDAA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5531413BDC4EE168F3F58CD9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52A65821A70D553005DDAA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BB13DAB53999C3B495D6D88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41FCADDB92AFB849CF183A89 /* Pods.debug.xcconfig */,
+				F97312B71E8852D486663422 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2205BE9BB2B2F94E1699F632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CB1BB1E141E8B116865911C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B52A65661A70D553005DDAA0 = {
+			isa = PBXGroup;
+			children = (
+				B52A65711A70D553005DDAA0 /* Squid */,
+				B52A65881A70D553005DDAA0 /* SquidTests */,
+				B52A65701A70D553005DDAA0 /* Products */,
+				1BB13DAB53999C3B495D6D88 /* Pods */,
+				2205BE9BB2B2F94E1699F632 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B52A65701A70D553005DDAA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B52A656F1A70D553005DDAA0 /* Squid.app */,
+				B52A65851A70D553005DDAA0 /* SquidTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B52A65711A70D553005DDAA0 /* Squid */ = {
+			isa = PBXGroup;
+			children = (
+				B52A65761A70D553005DDAA0 /* AppDelegate.h */,
+				B52A65771A70D553005DDAA0 /* AppDelegate.m */,
+				B52A657C1A70D553005DDAA0 /* Images.xcassets */,
+				B52A657E1A70D553005DDAA0 /* LaunchScreen.xib */,
+				B56201B81A7254AD00E90962 /* FormattedUILabel */,
+				B56201B41A72547C00E90962 /* DDFileReader */,
+				B52A65981A70D9E6005DDAA0 /* Controller */,
+				B52A65791A70D553005DDAA0 /* Squid.xcdatamodeld */,
+				B52A65721A70D553005DDAA0 /* Supporting Files */,
+			);
+			path = Squid;
+			sourceTree = "<group>";
+		};
+		B52A65721A70D553005DDAA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B52A65731A70D553005DDAA0 /* Info.plist */,
+				B52A65741A70D553005DDAA0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B52A65881A70D553005DDAA0 /* SquidTests */ = {
+			isa = PBXGroup;
+			children = (
+				B52A658B1A70D553005DDAA0 /* SquidTests.m */,
+				B52A65891A70D553005DDAA0 /* Supporting Files */,
+			);
+			path = SquidTests;
+			sourceTree = "<group>";
+		};
+		B52A65891A70D553005DDAA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B52A658A1A70D553005DDAA0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B52A65981A70D9E6005DDAA0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B52A65951A70D9DF005DDAA0 /* TextViewController.h */,
+				B52A65961A70D9DF005DDAA0 /* TextViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B56201B41A72547C00E90962 /* DDFileReader */ = {
+			isa = PBXGroup;
+			children = (
+				B56201B11A72547100E90962 /* DDFileReader.h */,
+				B56201B21A72547100E90962 /* DDFileReader.m */,
+			);
+			name = DDFileReader;
+			sourceTree = "<group>";
+		};
+		B56201B81A7254AD00E90962 /* FormattedUILabel */ = {
+			isa = PBXGroup;
+			children = (
+				B56201B51A7254A900E90962 /* UILabel+FormattedText.h */,
+				B56201B61A7254A900E90962 /* UILabel+FormattedText.m */,
+			);
+			name = FormattedUILabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B52A656E1A70D553005DDAA0 /* Squid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B52A658F1A70D553005DDAA0 /* Build configuration list for PBXNativeTarget "Squid" */;
+			buildPhases = (
+				96A091C92606CA58E8BACFFB /* Check Pods Manifest.lock */,
+				B52A656B1A70D553005DDAA0 /* Sources */,
+				B52A656C1A70D553005DDAA0 /* Frameworks */,
+				B52A656D1A70D553005DDAA0 /* Resources */,
+				88EC8E396FF3BF549712037D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Squid;
+			productName = Squid;
+			productReference = B52A656F1A70D553005DDAA0 /* Squid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B52A65841A70D553005DDAA0 /* SquidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B52A65921A70D553005DDAA0 /* Build configuration list for PBXNativeTarget "SquidTests" */;
+			buildPhases = (
+				B52A65811A70D553005DDAA0 /* Sources */,
+				B52A65821A70D553005DDAA0 /* Frameworks */,
+				B52A65831A70D553005DDAA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B52A65871A70D553005DDAA0 /* PBXTargetDependency */,
+			);
+			name = SquidTests;
+			productName = SquidTests;
+			productReference = B52A65851A70D553005DDAA0 /* SquidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B52A65671A70D553005DDAA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Lin Dong";
+				TargetAttributes = {
+					B52A656E1A70D553005DDAA0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B52A65841A70D553005DDAA0 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B52A656E1A70D553005DDAA0;
+					};
+				};
+			};
+			buildConfigurationList = B52A656A1A70D553005DDAA0 /* Build configuration list for PBXProject "Squid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B52A65661A70D553005DDAA0;
+			productRefGroup = B52A65701A70D553005DDAA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B52A656E1A70D553005DDAA0 /* Squid */,
+				B52A65841A70D553005DDAA0 /* SquidTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B52A656D1A70D553005DDAA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52A65801A70D553005DDAA0 /* LaunchScreen.xib in Resources */,
+				B52A657D1A70D553005DDAA0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52A65831A70D553005DDAA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88EC8E396FF3BF549712037D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A091C92606CA58E8BACFFB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B52A656B1A70D553005DDAA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56201B71A7254A900E90962 /* UILabel+FormattedText.m in Sources */,
+				B52A65781A70D553005DDAA0 /* AppDelegate.m in Sources */,
+				B52A65751A70D553005DDAA0 /* main.m in Sources */,
+				B52A657B1A70D553005DDAA0 /* Squid.xcdatamodeld in Sources */,
+				B52A65971A70D9DF005DDAA0 /* TextViewController.m in Sources */,
+				B56201B31A72547100E90962 /* DDFileReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52A65811A70D553005DDAA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52A658C1A70D553005DDAA0 /* SquidTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B52A65871A70D553005DDAA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B52A656E1A70D553005DDAA0 /* Squid */;
+			targetProxy = B52A65861A70D553005DDAA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B52A657E1A70D553005DDAA0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B52A657F1A70D553005DDAA0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B52A658D1A70D553005DDAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B52A658E1A70D553005DDAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B52A65901A70D553005DDAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41FCADDB92AFB849CF183A89 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Squid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B52A65911A70D553005DDAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F97312B71E8852D486663422 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Squid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B52A65931A70D553005DDAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SquidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Squid.app/Squid";
+			};
+			name = Debug;
+		};
+		B52A65941A70D553005DDAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SquidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Squid.app/Squid";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B52A656A1A70D553005DDAA0 /* Build configuration list for PBXProject "Squid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52A658D1A70D553005DDAA0 /* Debug */,
+				B52A658E1A70D553005DDAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B52A658F1A70D553005DDAA0 /* Build configuration list for PBXNativeTarget "Squid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52A65901A70D553005DDAA0 /* Debug */,
+				B52A65911A70D553005DDAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B52A65921A70D553005DDAA0 /* Build configuration list for PBXNativeTarget "SquidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52A65931A70D553005DDAA0 /* Debug */,
+				B52A65941A70D553005DDAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B52A65791A70D553005DDAA0 /* Squid.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B52A657A1A70D553005DDAA0 /* Squid.xcdatamodel */,
+			);
+			currentVersion = B52A657A1A70D553005DDAA0 /* Squid.xcdatamodel */;
+			path = Squid.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B52A65671A70D553005DDAA0 /* Project object */;
+}
