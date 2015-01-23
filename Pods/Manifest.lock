@@ -21,13 +21,18 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - FontasticIcons (0.5.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
 
 DEPENDENCIES:
   - AFNetworking (~> 2.4)
   - FontasticIcons
+  - FontAwesomeKit/FontAwesome
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
   FontasticIcons: a19672f86f2bf1b0ad51b21f1f7f1fad1ddd83f7
+  FontAwesomeKit: 61f0b4f12f1b11b7489bc7d1507a8692547f3857
 
 COCOAPODS: 0.34.1

@@ -12,7 +12,6 @@
 		B52A65781A70D553005DDAA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A65771A70D553005DDAA0 /* AppDelegate.m */; };
 		B52A657B1A70D553005DDAA0 /* Squid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B52A65791A70D553005DDAA0 /* Squid.xcdatamodeld */; };
 		B52A657D1A70D553005DDAA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52A657C1A70D553005DDAA0 /* Images.xcassets */; };
-		B52A65801A70D553005DDAA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52A657E1A70D553005DDAA0 /* LaunchScreen.xib */; };
 		B52A658C1A70D553005DDAA0 /* SquidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A658B1A70D553005DDAA0 /* SquidTests.m */; };
 		B52A65971A70D9DF005DDAA0 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A65961A70D9DF005DDAA0 /* TextViewController.m */; };
 		B56201B31A72547100E90962 /* DDFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B56201B21A72547100E90962 /* DDFileReader.m */; };
@@ -39,7 +38,6 @@
 		B52A65771A70D553005DDAA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B52A657A1A70D553005DDAA0 /* Squid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Squid.xcdatamodel; sourceTree = "<group>"; };
 		B52A657C1A70D553005DDAA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B52A657F1A70D553005DDAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B52A65851A70D553005DDAA0 /* SquidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52A658A1A70D553005DDAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B52A658B1A70D553005DDAA0 /* SquidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquidTests.m; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				B52A65761A70D553005DDAA0 /* AppDelegate.h */,
 				B52A65771A70D553005DDAA0 /* AppDelegate.m */,
 				B52A657C1A70D553005DDAA0 /* Images.xcassets */,
-				B52A657E1A70D553005DDAA0 /* LaunchScreen.xib */,
 				B56201B81A7254AD00E90962 /* FormattedUILabel */,
 				B56201B41A72547C00E90962 /* DDFileReader */,
 				B52A65981A70D9E6005DDAA0 /* Controller */,
@@ -259,7 +256,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52A65801A70D553005DDAA0 /* LaunchScreen.xib in Resources */,
 				B52A657D1A70D553005DDAA0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,17 +333,6 @@
 			targetProxy = B52A65861A70D553005DDAA0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B52A657E1A70D553005DDAA0 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B52A657F1A70D553005DDAA0 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B52A658D1A70D553005DDAA0 /* Debug */ = {
@@ -431,6 +416,7 @@
 			baseConfigurationReference = 41FCADDB92AFB849CF183A89 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Squid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +428,7 @@
 			baseConfigurationReference = F97312B71E8852D486663422 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Squid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

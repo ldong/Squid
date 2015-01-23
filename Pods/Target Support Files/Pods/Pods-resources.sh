@@ -41,7 +41,8 @@ install_resource()
       ;;
   esac
 }
-          install_resource "FontasticIcons/FontasticIcons/Sources/Resources/Fonts/Entypo-Social.otf"
+          install_resource "FontAwesomeKit/FontAwesomeKit/FontAwesome.otf"
+                    install_resource "FontasticIcons/FontasticIcons/Sources/Resources/Fonts/Entypo-Social.otf"
                     install_resource "FontasticIcons/FontasticIcons/Sources/Resources/Fonts/Entypo.otf"
                     install_resource "FontasticIcons/FontasticIcons/Sources/Resources/Fonts/fontawesome.ttf"
                     install_resource "FontasticIcons/FontasticIcons/Sources/Resources/Fonts/iconic.otf"
