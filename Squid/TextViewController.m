@@ -62,9 +62,7 @@ BOOL isPlayToggle = NO;
 
 -(void) initViews{
   [self initBackground];
-  //[self initPlayButton];
-  [self initPlayButton:PLAYTAG];
-  self.playButton.tag=1101;
+  [self initPlayButton];
   [self initSpeedSlider];
   [self initSpeedLabel];
   [self initTextLabel];
@@ -106,45 +104,6 @@ BOOL isPlayToggle = NO;
 //  NSLog(@"Called");
 }
 
--(void) updateTextLabel: (NSMutableArray*) texts{
-  NSLog(@"updateTextLabel");
-  
-  /*
-  CATransition *animation = [CATransition animation];
-  animation.duration = sleepInterval;
-  animation.type = kCATransitionFade;
-  animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-  */
-  if(texts){
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{ // 1
-      for(int i=0; i<texts.count;){
-        if(isPlayToggle){
-          dispatch_async(dispatch_get_main_queue(), ^{ // 2
-  //          [self.textLabel.layer addAnimation:animation forKey:@"changeTextTransition"];
-            if(texts[i]){
-              self.textLabel.text = texts[i]; // 3
-//              [self.textLabel setTextAlignment:NSTextAlignmentLeft];
-              [self.textLabel setTextAlignment:NSTextAlignmentCenter];
-              int length = [(NSString*)(texts[i]) length];
-              [self.textLabel setTextColor:[UIColor redColor]
-                                     range:NSMakeRange(length/2, length/2?1:0)];
-            }
-          });
-  //        sleep(1);
-          NSLog(@"dispatch ---- sleepInterval: %@", self.sleepInterval);
-  //        sleep(sleepInterval);
-  //        sleep([self.sleepInterval floatValue]);
-          usleep([self.sleepInterval floatValue] * 1000000);
-          ++i;
-        } else {
-  //        self.textLabel.text = @"HALT"; // 3
-        }
-      }
-  //    self.textLabel.text = @"DONE"; // 3
-    });
-  }
-  
-}
 
 -(void) initTextLabel{
   double width = [[UIScreen mainScreen] bounds].size.width - 30;
@@ -216,54 +175,6 @@ BOOL isPlayToggle = NO;
   self.textLabel.font = [UIFont fontWithName:@"Helvetica" size: ((int)slider.value)];
 }
 
--(void) initPlayButton:(int) number{
-  double width = 45;
-  double height = width;
-  double x = [[UIScreen mainScreen] bounds].size.width/2 - width/2;
-  double y = [[UIScreen mainScreen] bounds].size.height/2 - height/2;
-  self.playButton = [[UIButton alloc] initWithFrame: CGRectMake(x, y, width, height)];
-  self.playButton.tag = number;
-  
-  FIIcon *icon ;
-  if(number == PLAYTAG)
-    icon = [FIEntypoIcon playIcon];
-  else
-    icon = [FIEntypoIcon stopIcon];
-  
-  FIIconLayer *layer = [FIIconLayer new];
-  layer.icon = icon;
-  layer.frame = self.playButton.bounds;
-  layer.iconColor = [UIColor blackColor];
-  [self.playButton.layer addSublayer:layer];
-  
-  [self.playButton addTarget:self
-             action:@selector(togglePLayButton:)
-   forControlEvents:UIControlEventTouchUpInside];
-  [[self view] addSubview:self.playButton];
-}
-
-
--(void) initPlayButton1:(int) number{
-  double width = 45;
-  double height = width;
-  double x = [[UIScreen mainScreen] bounds].size.width/2 - width/2;
-  double y = [[UIScreen mainScreen] bounds].size.height/2 - height/2;
-  UIButton *button = [[UIButton alloc] initWithFrame: CGRectMake(x, y, width, height)];
-  button.tag = number;
-  FIIcon *icon = [FIEntypoIcon playIcon];
-  FIIconLayer *layer = [FIIconLayer new];
-  layer.icon = icon;
-  layer.frame = button.bounds;
-  layer.iconColor = [UIColor blackColor];
-  [button.layer addSublayer:layer];
-  
-  [button addTarget:self
-             action:@selector(togglePLayButton:)
-   forControlEvents:UIControlEventTouchUpInside];
-  [self setPlayButton:button];
-  [[self view] addSubview:button];
-}
-
 -(void) initPlayButton{
   double width = 45;
   double height = width;
@@ -330,8 +241,51 @@ BOOL isPlayToggle = NO;
   
   [reader enumerateLinesUsingBlock:^(NSString * line, BOOL * stop) {
     NSLog(@"read line: %@", line);
-    [self updateTextLabel:[self splitLine:line]];
+    dispatch_async(dispatch_get_main_queue(), ^{ // 2
+      [self updateTextLabel:[self splitLine:line]];
+    });
   }];
+}
+
+
+-(void) updateTextLabel: (NSMutableArray*) texts{
+  NSLog(@"updateTextLabel");
+  
+  /*
+   CATransition *animation = [CATransition animation];
+   animation.duration = sleepInterval;
+   animation.type = kCATransitionFade;
+   animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+   */
+  if(texts){
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{ // 1
+      for(int i=0; i<texts.count;){
+        if(isPlayToggle){
+          dispatch_async(dispatch_get_main_queue(), ^{ // 2
+            //          [self.textLabel.layer addAnimation:animation forKey:@"changeTextTransition"];
+            if(texts[i]){
+              self.textLabel.text = texts[i]; // 3
+              //              [self.textLabel setTextAlignment:NSTextAlignmentLeft];
+              [self.textLabel setTextAlignment:NSTextAlignmentCenter];
+              int length = [(NSString*)(texts[i]) length];
+              [self.textLabel setTextColor:[UIColor redColor]
+                                     range:NSMakeRange(length/2, length/2?1:0)];
+            }
+          });
+          //        sleep(1);
+          NSLog(@"dispatch ---- sleepInterval: %@", self.sleepInterval);
+          //        sleep(sleepInterval);
+          //        sleep([self.sleepInterval floatValue]);
+          usleep([self.sleepInterval floatValue] * 1000000);
+          ++i;
+        } else {
+          //        self.textLabel.text = @"HALT"; // 3
+        }
+      }
+      //    self.textLabel.text = @"DONE"; // 3
+    });
+  }
+  
 }
 
 - (void)didReceiveMemoryWarning {
