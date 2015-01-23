@@ -247,22 +247,14 @@ BOOL isPlayToggle = NO;
   }];
 }
 
-
 -(void) updateTextLabel: (NSMutableArray*) texts{
   NSLog(@"updateTextLabel");
-  
-  /*
-   CATransition *animation = [CATransition animation];
-   animation.duration = sleepInterval;
-   animation.type = kCATransitionFade;
-   animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-   */
+
   if(texts){
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{ // 1
       for(int i=0; i<texts.count;){
         if(isPlayToggle){
           dispatch_async(dispatch_get_main_queue(), ^{ // 2
-            //          [self.textLabel.layer addAnimation:animation forKey:@"changeTextTransition"];
             if(texts[i]){
               self.textLabel.text = texts[i]; // 3
               //              [self.textLabel setTextAlignment:NSTextAlignmentLeft];
@@ -272,20 +264,13 @@ BOOL isPlayToggle = NO;
                                      range:NSMakeRange(length/2, length/2?1:0)];
             }
           });
-          //        sleep(1);
           NSLog(@"dispatch ---- sleepInterval: %@", self.sleepInterval);
-          //        sleep(sleepInterval);
-          //        sleep([self.sleepInterval floatValue]);
-          usleep([self.sleepInterval floatValue] * 1000000);
           ++i;
-        } else {
-          //        self.textLabel.text = @"HALT"; // 3
         }
+          usleep([self.sleepInterval floatValue] * 1000000);
       }
-      //    self.textLabel.text = @"DONE"; // 3
     });
   }
-  
 }
 
 - (void)didReceiveMemoryWarning {
