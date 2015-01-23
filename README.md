@@ -8,7 +8,14 @@ Inspired by:
 2. [OpenSpritz](https://gun.io/blog/openspritz-a-free-speed-reading-bookmarklet/)
 
 # Demo
-`#TODO`
+
+Demo
+
+![alt tag](https://raw.githubusercontent.com/ldong/Squid/master/demo/demo.gif)
+
+Open In Squid
+
+![alt tag](https://raw.githubusercontent.com/ldong/Squid/master/demo/OpenIn_demo.gif)
 
 # Reference
 
